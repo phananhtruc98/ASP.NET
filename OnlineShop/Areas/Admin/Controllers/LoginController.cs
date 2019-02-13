@@ -8,7 +8,7 @@ using Models;
 using OnlineShop.Areas.Admin.Code;
 using OnlineShop.Areas.Admin.Models;
 
-namespace Create_Admin_Area.Areas.Admin.Controllers
+namespace OnlineShop.Areas.Admin.Controllers
 {
     public class LoginController : Controller
     {

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-
+using Models;
 namespace OnlineShop.Areas.Admin.Controllers
 {
     public class CategoryController : Controller
@@ -11,7 +11,9 @@ namespace OnlineShop.Areas.Admin.Controllers
         // GET: Admin/Category
         public ActionResult Index()
         {
-            return View();
+            var iplCate = new CategoryModel();
+            var model = iplCate.ListAll();
+            return View(model);
         }
 
         // GET: Admin/Category/Details/5

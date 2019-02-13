@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace Create_Admin_Area
+namespace OnlineShop
 {
     public class RouteConfig
     {
@@ -17,7 +17,7 @@ namespace Create_Admin_Area
                 name: "Default",
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional },
-                namespaces: new [] { "Create_Admin_Area.Controllers" }
+                namespaces: new [] { "OnlineShop.Controllers" }
             );
         }
     }
